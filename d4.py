@@ -11,7 +11,7 @@
 def gift(gift_name):
     string_to_utf = bytearray(gift_name, "utf8")
     utf_to_binary = [(bin(letter))[2:] for letter in string_to_utf]
-    gift_in_binary = "".join(utf_to_binary)
+    gift_in_binary = " ".join(utf_to_binary)
     return print(f"{gift_in_binary}")
 
 
